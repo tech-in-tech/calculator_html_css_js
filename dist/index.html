@@ -61,7 +61,9 @@
                 <div class="flex bg-green-700 text-white justify-center items-centerh-16 w-16 m-2   rounded-md "onclick="current_Display  = current_Display+'/'; document.querySelector('#display').innerText = current_Display; ">
                     <h1 class="text-[40px]">/</h1>
                 </div>
-                <div class="flex bg-green-700 text-white justify-center items-centerh-16 w-16 m-2   rounded-md "onclick="current_Display  = current_Display+'='; document.querySelector('#display').innerText = current_Display; ">
+                <div class="flex bg-green-700 text-white justify-center items-centerh-16 w-16 m-2   rounded-md "onclick="let result = eval(current_Display);
+                current_Display = result;
+                document.querySelector('#display').innerText = current_Display; ">
                     <h1 class="text-[40px]">=</h1>
                 </div>
                 <div class="flex bg-green-700 text-white justify-center items-centerh-16 w-16 m-2   rounded-md "onclick="current_Display  = current_Display+'9'; document.querySelector('#display').innerText = current_Display; ">
